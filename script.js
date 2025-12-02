@@ -59,7 +59,6 @@ document.getElementById('lb-next').onclick = () => {
     lbImg.src = currentImages[currentIndex].src;
 };
 
-// cerrar lightbox si se hace click fuera de la imagen
 lightbox.addEventListener('click', e => {
     if (e.target === lightbox) {
         lightbox.style.display = 'none';
@@ -68,10 +67,13 @@ lightbox.addEventListener('click', e => {
 
 
 /* =========================================================
-   FADE-IN AL HACER SCROLL
+   FADE-IN AL HACER SCROLL (CORREGIDO)
 ========================================================= */
 
-const fadeElements = document.querySelectorAll('.project, .tech-section, .about-section');
+// 👇 ESTA LÍNEA ES LA CLAVE  
+const fadeElements = document.querySelectorAll(
+    '.project, .tech-section, .about-section'
+);
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
