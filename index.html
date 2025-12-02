@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Caterinne Avendaño</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Íconos Lucide (Apple-like) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.344.0/font/lucide.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>Caterinne Avendaño Peredo</h1>
         <p>Estudiante de Ingeniería Civil Informática</p>
         <p class="email">cestefania.ap@gmail.com</p>
     </header>
 
-    <!-- SECCIÓN SOBRE MÍ -->
+    <!-- SOBRE MÍ -->
     <section class="about-section fade-in">
         <h2 class="about-title">Sobre mí</h2>
         <p class="about-text">
-            Soy una estudiante de Ingeniería Civil Informática con experiencia en desarrollo web y móvil, 
-            utilizando tecnologías como Angular, React, Firebase y Node.js.
-            Me apasiona crear soluciones tecnológicas que resuelvan problemas reales y mejoren procesos manuales
-            mediante plataformas digitales intuitivas y eficientes.
+            Soy una estudiante de Ingeniería Civil Informática con experiencia en desarrollo web y móvil,
+            utilizando tecnologías como Angular, React, Firebase y Node.js. Me apasiona crear soluciones
+            tecnológicas que resuelvan problemas reales y mejoren procesos manuales mediante plataformas
+            digitales intuitivas y eficientes.
         </p>
     </section>
 
-    <!-- SECCIÓN DE TECNOLOGÍAS -->
+    <!-- TECNOLOGÍAS -->
     <section class="tech-section fade-in">
         <h2 class="tech-title">Tecnologías y Herramientas</h2>
 
         <div class="tech-grid">
 
-            <!-- Frontend -->
+            <!-- FRONTEND -->
             <div class="tech-card">
                 <h3 class="tech-subtitle">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="tech-logo">
-                    Frontend
+                    <i class="lucide lucide-layout tech-icon-title"></i> Frontend
                 </h3>
                 <div class="tech-icons">
 
@@ -67,50 +70,48 @@
                 </div>
             </div>
 
-            <!-- Backend -->
+            <!-- BACKEND -->
             <div class="tech-card">
                 <h3 class="tech-subtitle">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="tech-logo">
-                    Backend
+                    <i class="lucide lucide-server tech-icon-title"></i> Backend
                 </h3>
-                <div class="tech-icons">
 
+                <div class="tech-icons">
                     <div class="tech-icon" data-tooltip="Node.js">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
                     </div>
 
-                    <div class="tech-icon" data-tooltip="Express.js">
+                    <div class="tech-icon" data-tooltip="Express">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
                     </div>
 
-                    <div class="tech-icon" data-tooltip="Firebase Functions & Auth">
+                    <div class="tech-icon" data-tooltip="Firebase Auth & Functions">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
                     </div>
 
                     <div class="tech-icon" data-tooltip="Postman">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg">
                     </div>
-
                 </div>
             </div>
 
-            <!-- Bases de Datos -->
+            <!-- BASES DE DATOS -->
             <div class="tech-card">
                 <h3 class="tech-subtitle">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="tech-logo">
-                    Bases de Datos
+                    <i class="lucide lucide-database tech-icon-title"></i> Bases de Datos
                 </h3>
+
                 <div class="tech-icons">
 
-                    <div class="tech-icon" data-tooltip="MongoDB (NoSQL)">
+                    <div class="tech-icon" data-tooltip="MongoDB">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
                     </div>
 
-                    <div class="tech-icon" data-tooltip="Firebase Firestore (NoSQL)">
+                    <div class="tech-icon" data-tooltip="Firestore">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
                     </div>
 
-                    <div class="tech-icon" data-tooltip="SQL Server / SSMS">
+                    <div class="tech-icon" data-tooltip="SQL Server">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
                     </div>
 
@@ -121,12 +122,12 @@
                 </div>
             </div>
 
-            <!-- Cloud y Herramientas -->
+            <!-- CLOUD & TOOLS -->
             <div class="tech-card">
                 <h3 class="tech-subtitle">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="tech-logo">
-                    Cloud & Herramientas
+                    <i class="lucide lucide-cloud tech-icon-title"></i> Cloud & Herramientas
                 </h3>
+
                 <div class="tech-icons">
 
                     <div class="tech-icon" data-tooltip="GitHub">
@@ -147,17 +148,13 @@
 
                 </div>
             </div>
-
         </div>
     </section>
 
-
-
-    <!-- ============================= -->
-    <!--        PROYECTO 1            -->
-    <!-- ============================= -->
+    <!-- PROYECTOS -->
+    <!-- PROYECTO 1 -->
     <section class="project fade-in">
-        <h2>🌐 Proyecto Web 1 — Inventario & Finanzas</h2>
+        <h2><i class="lucide lucide-globe proj-icon"></i> Proyecto Web 1 — Inventario & Finanzas</h2>
 
         <div class="carousel" data-project="1">
             <button class="prev">❮</button>
@@ -170,17 +167,14 @@
         </div>
 
         <p class="description">
-            Plataforma para florería que permite gestionar inventario, ventas, gastos y reportes financieros. 
+            Plataforma para florería que permite gestionar inventario, ventas, gastos y reportes financieros.
             Utiliza Firebase Authentication, Firestore y Angular.
         </p>
     </section>
 
-
-    <!-- ============================= -->
-    <!--        PROYECTO 2            -->
-    <!-- ============================= -->
+    <!-- PROYECTO 2 -->
     <section class="project fade-in">
-        <h2>🌐 Proyecto Web 2 — Gestor de Convenios</h2>
+        <h2><i class="lucide lucide-globe proj-icon"></i> Proyecto Web 2 — Gestor de Convenios</h2>
 
         <div class="carousel" data-project="2">
             <button class="prev">❮</button>
@@ -193,17 +187,14 @@
         </div>
 
         <p class="description">
-            Sistema creado para la ORI-UCM para reemplazar la gestión manual en Excel. 
-            Incluye centralización de convenios y API Node.js + MongoDB.
+            Sistema creado para la ORI-UCM para reemplazar la gestión manual en Excel. Incluye centralización de
+            convenios y API Node.js + MongoDB.
         </p>
     </section>
 
-
-    <!-- ============================= -->
-    <!--        PROYECTO 3            -->
-    <!-- ============================= -->
+    <!-- PROYECTO 3 -->
     <section class="project fade-in">
-        <h2>🌐 Proyecto Web 3 — Rendición de Viajes (En desarrollo)</h2>
+        <h2><i class="lucide lucide-globe proj-icon"></i> Proyecto Web 3 — Rendición de Viajes</h2>
 
         <div class="carousel" data-project="3">
             <button class="prev">❮</button>
@@ -219,17 +210,13 @@
         </div>
 
         <p class="description">
-            Web para digitalizar rendiciones de conductores, reemplazando formularios en papel. 
-            Hecho con React+Vite, Firebase Auth y Firestore.
+            Web para digitalizar rendiciones de conductores. Hecho con React+Vite, Firebase Auth y Firestore.
         </p>
     </section>
 
-
-    <!-- ============================= -->
-    <!--        PROYECTO 4            -->
-    <!-- ============================= -->
+    <!-- PROYECTO 4 -->
     <section class="project fade-in">
-        <h2>📱 App Móvil — Inventario & Finanzas (En desarrollo)</h2>
+        <h2><i class="lucide lucide-smartphone proj-icon"></i> App Móvil — Inventario & Finanzas</h2>
 
         <div class="carousel mobile" data-project="4">
             <button class="prev">❮</button>
@@ -248,11 +235,10 @@
         </div>
 
         <p class="description">
-            App móvil para pequeños vendedores que necesitan controlar inventario, ingresos y gastos. 
-            Utiliza Firebase Auth, Firestore, Storage y Flutter.
+            App móvil para pequeños vendedores con control de inventario, ingresos y gastos.
+            Desarrollada con Flutter + Firebase.
         </p>
     </section>
-
 
     <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox">
