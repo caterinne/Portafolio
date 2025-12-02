@@ -3,28 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio - Caterinne Avendaño</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header>
-        <h1>Portafolio de Caterinne Avendaño Peredo</h1>
-        <p>cestefania.ap@gmail.com – Estudiante de Ingeniería Civil Informática</p>
-        <p>Webs y App Móvil</p>
+        <h1>Caterinne Avendaño Peredo</h1>
+        <p>Estudiante de Ingeniería Civil Informática</p>
+        <p class="email">cestefania.ap@gmail.com</p>
     </header>
 
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section class="about-section fade-in">
+        <h2 class="about-title">Sobre mí</h2>
+        <p class="about-text">
+            Soy una estudiante de Ingeniería Civil Informática con experiencia en desarrollo web y móvil, 
+            principalmente utilizando Angular, React, Firebase y Node.js.
+            Me apasiona crear soluciones tecnológicas que resuelvan problemas reales y mejoren procesos manuales 
+            mediante plataformas digitales intuitivas y eficientes.
+        </p>
+    </section>
+
+    <!-- SECCIÓN DE TECNOLOGÍAS -->
+    <section class="tech-section fade-in">
+        <h2 class="tech-title">Tecnologías y Herramientas</h2>
+
+        <div class="tech-grid">
+
+            <!-- Frontend -->
+            <div class="tech-card">
+                <h3 class="tech-subtitle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="tech-logo">
+                    Frontend
+                </h3>
+                <div class="tech-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="tech-card">
+                <h3 class="tech-subtitle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="tech-logo">
+                    Backend
+                </h3>
+                <div class="tech-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg">
+                </div>
+            </div>
+
+            <!-- Bases de Datos -->
+            <div class="tech-card">
+                <h3 class="tech-subtitle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="tech-logo">
+                    Bases de Datos
+                </h3>
+                <div class="tech-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
+                </div>
+            </div>
+
+            <!-- Cloud / Herramientas -->
+            <div class="tech-card">
+                <h3 class="tech-subtitle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="tech-logo">
+                    Cloud & Herramientas
+                </h3>
+                <div class="tech-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- PROYECTO 1 -->
-    <section class="project">
-        <h2>
-            <!-- Heroicon: Globe Alt -->
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M12 3c-2.5 2.3-4 5.8-4 9s1.5 6.7 4 9c2.5-2.3 4-5.8 4-9s-1.5-6.7-4-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4 9.5h16M4 14.5h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            Proyecto Web 1 — Sistema de Inventario y Control Financiero
-        </h2>
+    <section class="project fade-in">
+        <h2>🌐 Proyecto Web 1 — Inventario & Finanzas</h2>
 
         <div class="carousel" data-project="1">
             <button class="prev">❮</button>
@@ -37,23 +108,14 @@
         </div>
 
         <p class="description">
-            Plataforma web desarrollada para la gestión integral de una florería, permitiendo administrar inventario,
-            registrar ventas y gastos, y generar reportes financieros automáticos. Incluye autenticación segura mediante
-            Firebase Authentication y base de datos en tiempo real con Firestore, utilizando Angular como framework principal.
+            Plataforma para florería que permite gestionar inventario, ventas, gastos y reportes financieros. 
+            Utiliza Firebase Authentication, Firestore y Angular.
         </p>
     </section>
 
     <!-- PROYECTO 2 -->
-    <section class="project">
-        <h2>
-            <!-- Heroicon: Globe Alt -->
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M12 3c-2.5 2.3-4 5.8-4 9s1.5 6.7 4 9c2.5-2.3 4-5.8 4-9s-1.5-6.7-4-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4 9.5h16M4 14.5h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            Proyecto Web 2 — Gestor de Convenios para Instituciones
-        </h2>
+    <section class="project fade-in">
+        <h2>🌐 Proyecto Web 2 — Gestor de Convenios</h2>
 
         <div class="carousel" data-project="2">
             <button class="prev">❮</button>
@@ -66,24 +128,14 @@
         </div>
 
         <p class="description">
-            Aplicación web diseñada para optimizar la gestión de convenios académicos, enfocada en resolver una necesidad del área
-            ORI-UCM, quienes actualmente administran convenios utilizando planillas Excel. El sistema centraliza información,
-            facilita el seguimiento y permite gestionar estados y documentos mediante una API desarrollada en Node.js con base de datos MongoDB,
-            complementado con una interfaz moderna creada en ReactJS.
+            Sistema creado para la ORI-UCM para reemplazar la gestión manual en Excel. 
+            Incluye centralización de convenios y API Node.js + MongoDB.
         </p>
     </section>
 
     <!-- PROYECTO 3 -->
-    <section class="project">
-        <h2>
-            <!-- Heroicon: Globe Alt -->
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M12 3c-2.5 2.3-4 5.8-4 9s1.5 6.7 4 9c2.5-2.3 4-5.8 4-9s-1.5-6.7-4-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4 9.5h16M4 14.5h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            Proyecto Web 3 — Sistema de Rendición de Viajes (En desarrollo)
-        </h2>
+    <section class="project fade-in">
+        <h2>🌐 Proyecto Web 3 — Rendición de Viajes (En desarrollo)</h2>
 
         <div class="carousel" data-project="3">
             <button class="prev">❮</button>
@@ -99,24 +151,15 @@
         </div>
 
         <p class="description">
-            Sitio web en desarrollo para digitalizar el proceso de rendición de viajes utilizado por conductores, reemplazando registros
-            manuales en papel. La plataforma permite registrar gastos, viajes y respaldos, sincronizando datos en tiempo real mediante
-            Firestore y manteniendo el acceso seguro con Firebase Authentication. Construido con React + Vite para un rendimiento rápido.
+            Web para digitalizar rendiciones de conductores, reemplazando formularios en papel. 
+            Hecho con React+Vite, Firebase Auth y Firestore.
         </p>
     </section>
 
     <!-- PROYECTO 4 -->
-    <section class="project">
-        <h2>
-            <!-- Heroicon: Device Phone Mobile -->
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="8" y="3" width="8" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="12" cy="17.5" r="0.9" fill="currentColor"/>
-            </svg>
-            App Móvil — Control de Inventario y Finanzas (En desarrollo)
-        </h2>
+    <section class="project fade-in">
+        <h2>📱 App Móvil — Inventario & Finanzas (En desarrollo)</h2>
 
-        <!-- marcamos este carrusel como "mobile" para estilos especiales -->
         <div class="carousel mobile" data-project="4">
             <button class="prev">❮</button>
             <div class="carousel-track">
@@ -134,14 +177,12 @@
         </div>
 
         <p class="description">
-            Aplicación móvil orientada a pequeños vendedores y emprendedores que requieren administrar inventario,
-            registrar ventas, calcular utilidades y organizar sus finanzas. Incluye autenticación con Firebase Auth,
-            almacenamiento de imágenes con Firebase Storage y base de datos en tiempo real con Firestore. 
-            Construido con Flutter para una intefaz moderna y minimalista.
+            App móvil para pequeños vendedores que necesitan controlar inventario, ingresos y gastos. 
+            Utiliza Firebase Auth, Firestore, Storage y Flutter.
         </p>
     </section>
 
-    <!-- LIGHTBOX CON CONTROLES -->
+    <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox">
         <button id="lb-prev" class="lb-btn">❮</button>
         <img id="lightbox-img">
