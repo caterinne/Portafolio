@@ -87,3 +87,13 @@ const observer = new IntersectionObserver(entries => {
 });
 
 fadeElements.forEach(el => observer.observe(el));
+
+// FORZAR fade-in inicial para evitar espacio blanco
+window.addEventListener('DOMContentLoaded', () => {
+    const about = document.querySelector('.about-section');
+    const tech = document.querySelector('.tech-section');
+
+    if (about) about.classList.add('visible');
+    if (tech) tech.classList.add('visible');
+});
+
