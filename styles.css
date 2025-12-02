@@ -328,6 +328,60 @@ header p {
 #lb-prev { left: 4%; }
 #lb-next { right: 4%; }
 
+/* ===========================================
+   TOOLTIP ELEGANTE PARA ICONOS
+=========================================== */
+
+.tech-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.tech-icon img {
+    pointer-events: none; /* evita saltos del tooltip */
+}
+
+/* Tooltip */
+.tech-icon::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111827;
+    color: white;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    z-index: 20;
+}
+
+/* Flecha */
+.tech-icon::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #111827 transparent transparent transparent;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+/* Mostrar tooltip */
+.tech-icon:hover::after,
+.tech-icon:hover::before {
+    opacity: 1;
+    bottom: -48px;
+}
+
 
 /* ===========================================
    RESPONSIVE
