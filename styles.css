@@ -329,7 +329,7 @@ header p {
 #lb-next { right: 4%; }
 
 /* ===========================================
-   TOOLTIP ELEGANTE PARA ICONOS
+   TOOLTIP ELEGANTE PARA ICONOS DE TECNOLOGÍAS
 =========================================== */
 
 .tech-icon {
@@ -338,10 +338,10 @@ header p {
 }
 
 .tech-icon img {
-    pointer-events: none; /* evita saltos del tooltip */
+    pointer-events: none; /* el hover se detecta en el contenedor, no en la imagen */
 }
 
-/* Tooltip */
+/* Caja del tooltip */
 .tech-icon::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -349,38 +349,39 @@ header p {
     left: 50%;
     transform: translateX(-50%);
     background: #111827;
-    color: white;
+    color: #f9fafb;
     font-size: 0.75rem;
     padding: 6px 10px;
     border-radius: 8px;
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
-    transition: 0.25s ease;
+    transition: opacity 0.25s ease, bottom 0.25s ease;
     box-shadow: 0 4px 14px rgba(0,0,0,0.18);
     z-index: 20;
 }
 
-/* Flecha */
+/* Flechita del tooltip */
 .tech-icon::before {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -14px;
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
     border-color: #111827 transparent transparent transparent;
     opacity: 0;
-    transition: 0.25s ease;
+    transition: opacity 0.25s ease, bottom 0.25s ease;
 }
 
-/* Mostrar tooltip */
+/* Mostrar tooltip al hacer hover */
 .tech-icon:hover::after,
 .tech-icon:hover::before {
     opacity: 1;
     bottom: -48px;
 }
+
 
 
 /* ===========================================
